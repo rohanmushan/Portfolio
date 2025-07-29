@@ -1,0 +1,68 @@
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease forwards;
+}
+
+/* Delay Classes */
+.delay-1 {
+    animation-delay: 0.2s;
+}
+
+.delay-2 {
+    animation-delay: 0.4s;
+}
+
+.delay-3 {
+    animation-delay: 0.6s;
+}
+
+.delay-4 {
+    animation-delay: 0.8s;
+}
+
+/* Hero Animation */
+.hero-title, .hero-subtitle, .hero-text, .hero-buttons {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+.hero-title {
+    animation-delay: 0.3s;
+}
+
+.hero-subtitle {
+    animation-delay: 0.6s;
+}
+
+.hero-text {
+    animation-delay: 0.9s;
+}
+
+.hero-buttons {
+    animation-delay: 1.2s;
+}
+
+/* Skill Bar Animation */
+.skill-level.animate {
+    animation: fillBar 1.5s ease-out forwards;
+}
+
+@keyframes fillBar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--width);
+    }
+}
